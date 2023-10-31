@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Information Form</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h2>Personal Information Form</h2>
+    </div>
+    
+    <div style="float: right; padding: 20px;">
+        <img src="passport_photo.jpg" alt="Passport Photo" width="150" height="200">
+    </div>
+
+    <form action="#" method="post" style="margin-left: 20px;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="regNo">Reg. No.:</label>
+        <input type="text" id="regNo" name="regNo" required><br><br>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="section">Current Section:</label>
+        <select id="section" name="section">
+            <option value="secA">Sec A</option>
+            <option value="secB">Sec B</option>
+            <option value="secC">Sec C</option>
+        </select><br><br>
+
+        <label for="description">Describe yourself:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <label>Favorite Color:</label><br>
+        <input type="radio" id="color1" name="favoriteColor" value="Red">
+        <label for="color1">Red</label><br>
+        <input type="radio" id="color2" name="favoriteColor" value="Blue">
+        <label for="color2">Blue</label><br>
+        <input type="radio" id="color3" name="favoriteColor" value="Green">
+        <label for="color3">Green</label><br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="hobby1" name="hobbies[]" value="Reading">
+        <label for="hobby1">Reading</label><br>
+        <input type="checkbox" id="hobby2" name="hobbies[]" value="Sports">
+        <label for="hobby2">Sports</label><br>
+        <input type="checkbox" id="hobby3" name="hobbies[]" value="Music">
+        <label for="hobby3">Music</label><br><br>
+
+        <a href="https://www.smitcollege.edu" target="_blank">Click Here for College Website Link</a><br><br>
+
+        <div style="text-align: center;">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
